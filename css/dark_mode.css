@@ -1,0 +1,672 @@
+/* Dark Mode Styles */
+:root {
+  /* Dark mode color variables */
+  --dark-bg: #121212;
+  --dark-surface: #1e1e1e;
+  --dark-surface-2: #2d2d2d;
+  --dark-text: #e0e0e0;
+  --dark-text-secondary: #a0a0a0;
+  --dark-border: #333333;
+  --dark-accent: #4CAF50;
+  --dark-accent-hover: #3e8e41;
+  --dark-shadow: rgba(0, 0, 0, 0.5);
+  --dark-overlay: rgba(0, 0, 0, 0.7);
+}
+
+/* Dark mode body */
+body.dark-mode {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+/* Dark mode navigation */
+body.dark-mode .navbar {
+  background-color: var(--dark-surface);
+  box-shadow: 0 2px 10px var(--dark-shadow);
+}
+
+body.dark-mode .nav-links a {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .nav-links a.active,
+body.dark-mode .nav-links a:hover {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .hamburger {
+  color: var(--dark-text-secondary);
+}
+
+/* Dark mode hero section */
+body.dark-mode .carousel-content {
+  background-color: rgba(30, 30, 30, 0.9);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .carousel-content h1 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .carousel-content p {
+  color: var(--dark-text);
+}
+
+body.dark-mode .carousel-arrow {
+  background-color: rgba(30, 30, 30, 0.8);
+  color: var(--dark-text);
+}
+
+body.dark-mode .carousel-arrow:hover {
+  background-color: var(--dark-surface-2);
+}
+
+body.dark-mode .carousel-dot {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+body.dark-mode .carousel-dot.active,
+body.dark-mode .carousel-dot:hover {
+  background-color: var(--dark-accent);
+}
+
+/* Dark mode buttons */
+body.dark-mode .btn {
+  background-color: var(--dark-accent);
+  color: var(--dark-text);
+}
+
+body.dark-mode .btn:hover {
+  background-color: var(--dark-accent-hover);
+}
+
+body.dark-mode .btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--dark-accent);
+  color: var(--dark-accent);
+}
+
+body.dark-mode .btn-outline:hover {
+  background-color: var(--dark-accent);
+  color: var(--dark-text);
+}
+
+/* Dark mode search section */
+body.dark-mode .search-section {
+  background-color: var(--dark-surface);
+}
+
+body.dark-mode .search-container h2 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .search-box {
+  background-color: var(--dark-surface-2);
+  box-shadow: 0 3px 10px var(--dark-shadow);
+}
+
+body.dark-mode .search-box input {
+  color: var(--dark-text);
+}
+
+body.dark-mode .search-box button {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .search-box button:hover {
+  color: var(--dark-accent-hover);
+}
+
+/* Dark mode categories section */
+body.dark-mode .categories {
+  background-color: var(--dark-bg);
+}
+
+body.dark-mode .section-title {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .section-title::after {
+  background-color: var(--dark-accent);
+}
+
+body.dark-mode .category-tab {
+  background-color: var(--dark-surface);
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .category-tab:hover {
+  background-color: var(--dark-surface-2);
+}
+
+body.dark-mode .category-tab.active {
+  background-color: var(--dark-accent);
+  color: var(--dark-text);
+}
+
+/* Dark mode plant cards */
+body.dark-mode .plant-card {
+  background-color: var(--dark-surface);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .plant-card:hover {
+  box-shadow: 0 10px 20px var(--dark-shadow);
+}
+
+body.dark-mode .category-badge {
+  background-color: rgba(76, 175, 80, 0.8);
+}
+
+body.dark-mode .plant-card-content h3 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .toxic-indicator {
+  color: #ff6b6b;
+}
+
+body.dark-mode .scientific-name {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .description {
+  color: var(--dark-text-secondary);
+}
+
+/* Dark mode featured plants section */
+body.dark-mode .featured-section {
+  background-color: var(--dark-surface);
+}
+
+body.dark-mode .featured-card {
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .featured-card:hover {
+  box-shadow: 0 10px 20px var(--dark-shadow);
+}
+
+body.dark-mode .featured-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+}
+
+body.dark-mode .featured-card:hover .featured-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+}
+
+body.dark-mode .featured-content h3 {
+  color: var(--dark-text);
+}
+
+body.dark-mode .featured-category {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .featured-btn {
+  background-color: var(--dark-accent);
+}
+
+body.dark-mode .featured-btn:hover {
+  background-color: var(--dark-accent-hover);
+}
+
+/* Dark mode ask botanist section */
+body.dark-mode .ask-botanist-section {
+  background-color: var(--dark-bg);
+}
+
+body.dark-mode .ask-botanist-content {
+  background-color: var(--dark-surface);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .ask-botanist-text h2 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .ask-botanist-text p {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .coming-soon {
+  background-color: var(--dark-accent);
+}
+
+/* Dark mode modals */
+body.dark-mode .modal-overlay {
+  background-color: var(--dark-overlay);
+}
+
+body.dark-mode .modal {
+  background-color: var(--dark-surface);
+  box-shadow: 0 5px 30px var(--dark-shadow);
+}
+
+body.dark-mode .modal-header {
+  border-bottom: 1px solid var(--dark-border);
+}
+
+body.dark-mode .modal-title {
+  color: var(--dark-text);
+}
+
+body.dark-mode .modal-close {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .modal-close:hover {
+  color: #ff6b6b;
+}
+
+body.dark-mode .loading,
+body.dark-mode .loading-message,
+body.dark-mode .no-results {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .loading i,
+body.dark-mode .loading-message i,
+body.dark-mode .no-results i {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .error-message {
+  color: #ff6b6b;
+}
+
+body.dark-mode .coming-soon-content i {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .coming-soon-content h3 {
+  color: var(--dark-accent);
+}
+
+/* Dark mode plant detail styles */
+body.dark-mode .plant-detail-image {
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .plant-detail-info h3 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .detail-section h4 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .toxic-tag {
+  background-color: rgba(255, 107, 107, 0.2);
+  color: #ff6b6b;
+}
+
+body.dark-mode .non-toxic-tag {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: var(--dark-accent);
+}
+
+/* Dark mode about us modal styles */
+body.dark-mode .team-container {
+  background: linear-gradient(135deg, var(--dark-surface) 0%, var(--dark-surface-2) 100%);
+  box-shadow: 0 10px 30px var(--dark-shadow);
+}
+
+body.dark-mode .team-intro,
+body.dark-mode .team-mission {
+  background: var(--dark-surface-2);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .team-intro::before,
+body.dark-mode .team-mission::before {
+  background: linear-gradient(90deg, var(--dark-accent), #66bb6a);
+}
+
+body.dark-mode .team-intro h3,
+body.dark-mode .team-mission h3 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .team-intro p,
+body.dark-mode .team-mission p {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .team-leader {
+  background: var(--dark-surface-2);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .team-leader::before {
+  background: linear-gradient(90deg, var(--dark-accent), #66bb6a);
+}
+
+body.dark-mode .team-leader .profile-image {
+  border: 4px solid var(--dark-surface-2);
+  box-shadow: 0 8px 20px var(--dark-shadow);
+}
+
+body.dark-mode .team-leader h3 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .team-leader .member-title {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .team-leader .member-description {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .team-member {
+  background: var(--dark-surface-2);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .team-member::before {
+  background: linear-gradient(90deg, var(--dark-accent), #66bb6a);
+}
+
+body.dark-mode .team-member:hover {
+  box-shadow: 0 8px 25px var(--dark-shadow);
+}
+
+body.dark-mode .team-member .profile-image {
+  border: 4px solid var(--dark-surface-2);
+  box-shadow: 0 8px 20px var(--dark-shadow);
+}
+
+body.dark-mode .team-member h4 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .team-member .member-title {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .team-member .member-description {
+  color: var(--dark-text-secondary);
+}
+
+/* Dark mode profile modal styles */
+body.dark-mode .profile-container {
+  background: linear-gradient(135deg, var(--dark-surface) 0%, var(--dark-surface-2) 100%);
+  box-shadow: 0 10px 30px var(--dark-shadow);
+}
+
+body.dark-mode .welcome-message {
+  background-color: var(--dark-surface-2);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .welcome-message::before {
+  background: linear-gradient(90deg, var(--dark-accent), #66bb6a);
+}
+
+body.dark-mode .welcome-message h3 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .welcome-message p {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .profile-image {
+  border: 4px solid var(--dark-surface-2);
+  box-shadow: 0 8px 20px var(--dark-shadow);
+}
+
+body.dark-mode .profile-info {
+  background-color: var(--dark-surface-2);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .info-group {
+  border-bottom: 1px solid var(--dark-border);
+}
+
+body.dark-mode .info-group label {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .info-group p {
+  color: var(--dark-text);
+}
+
+body.dark-mode .btn-primary {
+  background-color: var(--dark-accent);
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.2);
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: var(--dark-accent-hover);
+  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.3);
+}
+
+body.dark-mode .btn-danger {
+  box-shadow: 0 4px 10px rgba(220, 53, 69, 0.2);
+}
+
+body.dark-mode .btn-danger:hover {
+  box-shadow: 0 6px 15px rgba(220, 53, 69, 0.3);
+}
+
+/* Dark mode footer */
+body.dark-mode .footer {
+  background-color: var(--dark-surface);
+  color: var(--dark-text);
+}
+
+body.dark-mode .footer-links a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+body.dark-mode .footer-links a:hover {
+  color: var(--dark-text);
+}
+
+body.dark-mode .social-icons a {
+  color: var(--dark-text);
+}
+
+body.dark-mode .social-icons a:hover {
+  opacity: 0.7;
+}
+
+/* Dark mode chat head */
+body.dark-mode .chat-head {
+  background-color: var(--dark-accent);
+  box-shadow: 0 4px 12px var(--dark-shadow);
+}
+
+body.dark-mode .chat-head-pulse {
+  background-color: var(--dark-accent);
+}
+
+/* Dark mode login/register pages */
+body.dark-mode .login-container,
+body.dark-mode .register-container {
+  background: linear-gradient(135deg, var(--dark-surface) 0%, var(--dark-surface-2) 100%);
+}
+
+body.dark-mode .login-box,
+body.dark-mode .register-box {
+  background: var(--dark-surface-2);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .login-header i,
+body.dark-mode .register-header i {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .login-header h1,
+body.dark-mode .register-header h1 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .login-form label,
+body.dark-mode .register-form label {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .login-form input,
+body.dark-mode .register-form input {
+  border: 2px solid var(--dark-border);
+  background-color: var(--dark-surface);
+  color: var(--dark-text);
+}
+
+body.dark-mode .login-form input:focus,
+body.dark-mode .register-form input:focus {
+  border-color: var(--dark-accent);
+}
+
+body.dark-mode .login-btn,
+body.dark-mode .register-btn {
+  background-color: var(--dark-accent);
+}
+
+body.dark-mode .login-btn:hover,
+body.dark-mode .register-btn:hover {
+  background-color: var(--dark-accent-hover);
+}
+
+body.dark-mode .login-footer a,
+body.dark-mode .register-footer a {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .forgot-password-link a {
+  color: var(--dark-accent);
+}
+
+/* Dark mode error/success messages */
+body.dark-mode .error-message {
+  background-color: rgba(255, 107, 107, 0.2);
+  color: #ff6b6b;
+}
+
+body.dark-mode .success-message {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: var(--dark-accent);
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(44, 122, 81, 0.1);
+  border: 2px solid rgba(44, 122, 81, 0.3);
+  cursor: pointer;
+  margin-left: 15px;
+  color: #2c7a51;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-mode-toggle:hover {
+  background-color: rgba(44, 122, 81, 0.2);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(44, 122, 81, 0.3);
+}
+
+.dark-mode-toggle i {
+  font-size: 1.2rem;
+  transition: transform 0.5s ease;
+}
+
+.dark-mode-toggle:hover i {
+  transform: rotate(15deg);
+}
+
+body.dark-mode .dark-mode-toggle {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-color: rgba(76, 175, 80, 0.3);
+  color: #4CAF50;
+}
+
+body.dark-mode .dark-mode-toggle:hover {
+  background-color: rgba(76, 175, 80, 0.2);
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+}
+
+/* Dark mode for plant diseases page */
+body.dark-mode .diseases-section {
+  background-color: var(--dark-bg);
+}
+
+body.dark-mode .disease-card {
+  background-color: var(--dark-surface);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .disease-card:hover {
+  box-shadow: 0 10px 20px var(--dark-shadow);
+}
+
+body.dark-mode .disease-info h2 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .scientific-name {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .description {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .detail-section h3 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .detail-section p {
+  color: var(--dark-text-secondary);
+}
+
+/* Dark mode for my garden page */
+body.dark-mode .garden-section {
+  background-color: var(--dark-bg);
+}
+
+body.dark-mode .garden-plant-card {
+  background-color: var(--dark-surface);
+  box-shadow: 0 5px 15px var(--dark-shadow);
+}
+
+body.dark-mode .garden-plant-card:hover {
+  box-shadow: 0 10px 20px var(--dark-shadow);
+}
+
+body.dark-mode .garden-plant-info h3 {
+  color: var(--dark-accent);
+}
+
+body.dark-mode .garden-plant-info p {
+  color: var(--dark-text-secondary);
+}
+
+body.dark-mode .garden-actions button {
+  background-color: var(--dark-accent);
+  color: var(--dark-text);
+}
+
+body.dark-mode .garden-actions button:hover {
+  background-color: var(--dark-accent-hover);
+}
+
+body.dark-mode .add-plant-btn {
+  background-color: var(--dark-accent);
+  color: var(--dark-text);
+}
+
+body.dark-mode .add-plant-btn:hover {
+  background-color: var(--dark-accent-hover);
+} 
